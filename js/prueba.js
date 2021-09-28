@@ -1,0 +1,13 @@
+import * as datos from "./formf.js";
+var tipod = document.forms['formregistro']['tipodocumento'].value;
+var documento = document.forms['formregistro']['numerodocumento'].value;
+var email = document.forms['formregistro']['correo'].value;
+var contra = document.forms['formregistro']['contrasena'].value;
+console.log(tipod);
+console.log(documento);
+var validartd = datos.checkNumDocumento(documento, tipod);
+console.log("documento: " + validartd);
+var validarcorreo = datos.checkCorreo(email);
+console.log("correo: " + validarcorreo);
+var validarcontra = datos.checkContrasena(contra);
+console.log("contraseña: " + validarcontra);
