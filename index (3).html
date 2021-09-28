@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/estilos.css">
+    <title>Historia de usuarios</title>
+    <script languague="javascript">
+        function mostrar() {
+                div = document.getElementById('flotante');
+                div.style.display = '';
+            }
+            
+            function cerrar() {
+                div = document.getElementById('flotante');
+                div.style.display = 'none';
+            }
+    </script>
+    
+</head>
+<body>
+    <header class="page-header">
+        <div class="center-contents">
+          
+          <nav class="page-nav">
+            <ul>
+              <li><a href="javascript:mostrar();">Registrarse</a></li>
+              <li>¿Ya tienes una cuenta?</li>
+              <li><a href="#" title="">Ingresar</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="page-contents">
+        <h1>Titular de la página</h1>
+        <p>Texto</p>
+        <p>Texto</p>
+      </main>
+<div id="flotante" style="display:none;" class="content2"> 
+    <section class="form-logo">
+                <h2>Logo</h2>
+                <section class="form-registro">
+                    <div class="close" id="close"><a href="javascript:cerrar();">cerrar</a></div>
+                    <h3>Registro</h3>
+                    <form id="form-registro" action="index.html"method="POST">
+                        <label for="tipo_documento">Tipo de Documento</label><br>
+                        <select class="control"id="tipo_de_documento" name="tipo_de_documento"><br>
+                            <option></option>
+                            <option value="tarjeta_identidad">Tarjeta de identidad</option>
+                            <option value="cedula">Cédula</option>
+                            <option value="pasaporte">Pasaporte</option>
+                            <option value="tarjeta_residencia">Tarjeta de residencia</option>
+                        </select>
+                        <br><label for="numero_documento">Numero de Documento</label><br>
+                        <input type="text" name="numero_de_documento" id="numero_de_documento"><br>
+                        <label for="correo">Correo</label><br>
+                        <input type="text" name="correo" id="correo"><br>
+                        <label for="contra">Contraseña</label><br>
+                        <input type="password" name="contrasena" id="contrasena"><br>
+                        <br><button class="button"name="btn-registrar" id="btn-registrar">Registrar</button><br>
+                    </section>
+                    </form>  
+                <footer>
+                    <div class='define'>
+                        <footer>Footer</footer>
+                    </div>
+                </footer>
+            </section>
+</div>
+        <!-- forth sections start -->
+        <section id="content-1-9" class="content-1-9 content-block">
+            <div class="container">
+                <div class="underlined-title">
+                    <h5>Reservation Plan</h5>
+                    <hr>
+                    <h6>Programación de despachos</h6>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12 pad25">
+                        <div class="col-xs-2">
+                            <span class="fa fa-pencil"></span>
+                        </div>
+                        <div class="col-xs-10">
+                            <h4>Contáctanos</h4>
+                            <p><a href="mailto:jose50000@hotmail.com">jose50000@hotmail.com<br><a href="mailto:arojas083@gmail.com">arojas083@gmail.com<br>
+							<a href="mailto:juandamtr@gmail.com">juandamtr@gmail.com<br><a href="mailto:camilotobon21@gmail.com">camilotobon21@gmail.com<br><a href="mailto:tatiana.zuluaga0955@uco.net.co">tatiana.zuluaga0955@uco.net.co</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12 pad25">
+                        <div class="col-xs-2">
+                            <span class="fa fa-university"></span>
+                        </div>
+                        <div class="col-xs-10">
+                            <h4>Instituciones</h4>
+                            <p>Universidad Pontificia Bolivariana.<br>Misión Tic 2022.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12 pad25">
+                        <div class="col-xs-2">
+                            <span class="fa fa-users"></span>
+                        </div>
+                        <div class="col-xs-10">
+                            <h7>Integrantes</h7>
+                            <p>Jose Fernando Villegas Lora<br>Jose Alexander Rojas Saldarriaga<br>Juan David Montaño Toro<br>Camilo Tobon Florez<br>Tatiana Zuluaga Alzate</p>
+                        </div>
+                    </div>
+               
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- forth section end -->
+        <!-- footer start -->
+		<div class="copyright-bar bg-black">
+			<div class="container">
+				<p class="pull-left small">© Reservation Plan</p>
+				<p class="pull-right small"><a href="login.html">admin</a></p>
+			</div>
+		</div>
+        <!-- footer end -->
+    </div>
+   
+</body>
+</html>
